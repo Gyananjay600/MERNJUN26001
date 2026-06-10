@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Portal</title>
+</head>
+<body>
+
+    <h1>Student Registration Portal</h1>
+
+    <hr>
+
+    <a href="Assignments/Home.html">Home</a>  |
+    <a href="Assignments\About.html">About</a> |
+    <a href="Assignments/Courses.html">Courses</a> |
+    <a href="Assignments/Gallery.html">Gallery</a> |
+    <a href="Assignments/Contact.html">Contact</a> |
+    <a href="Assignments/Login.html">Login</a>
+
+    <hr>
+
+    <!-- Registration Form using Form Tag -->
+    <h2>Student Registration Form</h2>
+
+    <form action="submit.php" method="POST">
+
+        <label>Full Name:</label><br>
+        <input type="text" name="fullname"><br><br>
+
+        <label>Email:</label><br>
+        <input type="email" name="email"><br><br>
+
+        <label>Password:</label><br>
+        <input type="password" name="password"><br><br>
+
+        <label>Phone Number:</label><br>
+        <input type="tel" name="phone"><br><br>
+
+        <label>Gender:</label><br>
+        <input type="radio" name="gender" value="Male"> Male
+        <input type="radio" name="gender" value="Female"> Female
+        <br><br>
+
+        <label>Course:</label><br>
+        <select name="course">
+            <option>B.Tech</option>
+            <option>BCA</option>
+            <option>MCA</option>
+            <option>M.Tech</option>
+        </select>
+        <br><br>
+
+        <label>Skills:</label><br>
+        <input type="checkbox" name="skill" value="HTML"> HTML
+        <input type="checkbox" name="skill" value="CSS"> CSS
+        <input type="checkbox" name="skill" value="JavaScript"> JavaScript
+        <br><br>
+
+        <label>Address:</label><br>
+        <textarea rows="4" cols="30"></textarea>
+        <br><br>
+
+        <input type="submit" value="Register">
+        <input type="reset" value="Clear">
+
+    </form>
+
+    <hr>
+
+    <h3>Useful Links</h3>
+
+    <a href="https://www.google.com" target="_blank">Google</a><br>
+    <a href="https://www.youtube.com" target="_blank">YouTube</a><br>
+    <a href="https://github.com" target="_blank">GitHub</a>
+
+</body>
+</html>
