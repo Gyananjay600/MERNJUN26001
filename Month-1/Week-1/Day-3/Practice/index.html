@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 2</title>
+  </head>
+  <body>
+    <h1>This is the second class.</h1>
+
+    <!-- Table tag -->
+
+    <table border="1">
+      <caption>
+        Employee Information(Example of Table)
+      </caption>
+      <callgroup>
+        <call name="Gyana" age="22" city="Bhubaneswar" phone="+91 9876543210" />
+        <call name="Gyananjay" age="25" city="Delhi" phone="+91 9876543211" />
+        <call
+          name="Gyaneshwar"
+          age="30"
+          city="Kolkata"
+          phone="+91 9876543212"
+        />
+      </callgroup>
+
+      <tr>
+        <th colspan="2">Name</th>
+        <th>Age</th>
+        <th>City</th>
+        <th>phone</th>
+      </tr>
+      <tr>
+        <td rowspan="2">Gyana</td>
+        <td>22</td>
+        <td>Bhubaneswar</td>
+        <td>+91 9876543210</td>
+      </tr>
+      <tr>
+        <td>Gyananjay</td>
+        <td>25</td>
+        <td>Delhi</td>
+        <td>+91 9876543211</td>
+      </tr>
+      <tr>
+        <td>Gyaneshwar</td>
+        <td>30</td>
+        <td>Kolkata</td>
+        <td>+91 9876543212</td>
+      </tr>
+    </table>
+    <br /><br />
+
+    <!-- anchor tag -->
+    <!-- target="_blank" opens the link in a new tab -->
+
+    <a href="https://qlith.com/" target="_blank">Click here goto Qlith</a><br />
+
+    <a href="https://www.google.com/" target="_blank">Click here goto Google</a
+    ><br />
+
+    <br />
+
+    <a href="images\cat.jpeg" target="_blank" download="cat.jpeg"
+      >Click here to download</a
+    ><br />
+
+    <!--Form tag-->
+
+    <form>
+      <h2>Registration Form</h2>
+
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name.."/><br /><br />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email.."/><br /><br />
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password.."/><br /><br />
+
+      <label for="Phone">Phone:</label>
+      <input type="number" id="Phone" name="Phone" placeholder="Enter your phone number.."/><br /><br />
+        <label for="gender">Gender:</label> 
+      <input type="radio" id="male" name="gender" value="Male" />
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="Female" />
+      <label for="female">Female</label><br /><br />
+
+       <label for="hobbies">Hobbies:</label>
+        <input type="checkbox" id="hobby1" name="hobbies" value="Reading" />
+        <label for="hobby1">Reading</label> 
+        <input type="checkbox" id="hobby2" name="hobbies" value="Traveling" />
+        <label for="hobby2">Traveling</label>
+        <input type="checkbox" id="hobby3" name="hobbies" value="Cooking" />
+        <label for="hobby3">Cooking</label><br /><br />
+
+         <label for="image">Photo:</label>
+        <input type="file" id="image" name="image" /><br /><br />
+
+        <input type="date">
+        <input type="time">
+        <input type="color">
+        <input type="range" min="0" max="100">
+        <input type="reset" value="Reset Form">
+        <!-- <input type="month">
+        <input type="week"> -->
+        <input type="search" placeholder="Search...">
+        <label for="url">Website:</label>
+        <input type="url" id="url" placeholder="https://example.com">
+        <br /><br />
+
+
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
