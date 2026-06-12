@@ -1,0 +1,154 @@
+
+
+/* selectors */
+
+/* Types of selectors:
+Simple selectors:
+1. Universal selector (*)
+2. Type selector (h1, p, div)
+3. Class selector (.className)
+4. ID selector (#idName)
+5. Attribute selector (input[type="text"])
+6. Pseudo-class selector (a:hover, li:first-child)
+7. Pseudo-element selector (p::first-line, div::before)
+8. Grouping selector (h1, h2, h3)
+9. Descendant selector (div p)
+10. Child selector (ul > li)
+11. Adjacent sibling selector (h1 + p)
+12. General sibling selector (h1 ~ p)
+13. tag name selector (h1, p, div) */
+
+
+/* taking id selector as # */
+
+#myParagraph {
+    background-color: blue;
+}
+
+/* taking class selector as . */
+
+.myClass {
+    color: green;
+}
+
+/* tag selector */
+
+h1{
+    background-color: red;
+}
+
+/* Grouping selector */
+
+#myParagraph,.p-class{
+    color: brown;
+    font-size: 20px;
+    font-style: italic;
+}
+
+/* Universal selector */
+
+/* *{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+} */
+
+
+/* Combinator selectors: 
+           -> descendant selector : selects elements that are descendants of a specified element.
+             Example: div p { color: red; } (selects all <p> elements that are inside a <div>)
+           -> direct-child selector (>):
+             Example: div > p { color: blue; } (selects only <p> elements that are direct children of a <div>)
+           -> adjacent sibling selector (+):
+             Example: h1 + p { color: green; } (selects the first <p> element that immediately follows an <h1>)
+           -> general sibling selector (~):
+             Example: h1 ~ p { color: blue; } (selects all <p> elements that follow an <h1>)
+
+/* Descendant selector */
+
+.parent p{
+    background-color: yellow;
+}
+
+/* Direct-child selector */
+
+.parent > p{
+    color: rgb(197, 40, 66);
+}
+
+/* Adjacent sibling selector */
+
+.parent + div{
+    background-color: darkorchid;
+}
+
+/* General sibling selector */
+
+.parent ~ div{
+    color: white;
+    background-color: rgb(48, 194, 11);
+}
+
+
+/* pseudo-class selector:
+        -> :hover (applies when the user hovers over an element)
+           Example: a:hover { color: red; } (changes the color of links when hovered)
+        -> : active (applies when an element is being activated by the user)
+           Example: button:active { background-color: green; } (changes the background color of buttons when clicked)
+        -> : focus (applies when an element has focus)
+           Example: input:focus { border-color: blue; } (changes the border color of input fields when they are focused)
+        -> : nth-child(n) (applies to the nth child of a parent element)
+           Example: li:nth-child(2) { color: orange; } (changes the color of the second list item)   */
+
+
+section {
+    width: 100px;
+    height: 50px;
+    background-color: lightblue;
+    margin: 10px;
+    padding: 10px;
+}
+
+section:hover {
+    background-color: lightcoral;
+}
+
+section:active {
+    background-color: lightgreen;
+}
+
+input:focus {
+    border-color: red;
+    background-color: lightyellow;
+    line-height: 1.5;
+}
+
+li:first-child{
+    color: purple;
+}
+
+li:last-child{
+    color: orange;
+}
+
+li:nth-child(2){
+    color: brown;
+}
+
+/* Box model:
+        -> content: The innermost part of the box where text and images appear.
+        -> padding: The space between the content and the border. It can be set using the padding property.
+        -> border: The area surrounding the padding (if any) and content. It can be styled using the border property.
+        -> margin: The outermost layer that creates space between the element and other elements. It can be set using the margin property. */
+
+*{
+    box-sizing: border-box; /* includes padding and border in the element's total width and height */
+}
+
+.box{
+    width: 200px;
+    height: 100px;
+    padding: 20px 10px ; /* space between content and border */
+    border: 10px dotted red; /* border around the element */
+    margin: 30px; /* space outside the border */
+}
