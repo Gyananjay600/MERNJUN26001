@@ -1,0 +1,87 @@
+/* Universal Selector */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ID Selector */
+#main-heading{
+    color: darkblue;
+    text-align: center;
+    margin: 20px;
+}
+
+/* Group Selector */
+h1, h2{
+    font-family: Arial, sans-serif;
+}
+
+/* Class Selector */
+.highlight{
+    color: crimson;
+    font-size: 22px;
+}
+
+/* Element Selector */
+p{
+    margin: 15px;
+    font-size: 18px;
+}
+
+/* Image Styling */
+img{
+    width: 250px;
+    height: 250px;
+    border: 3px solid black;
+    margin: 20px;
+}
+
+/* List Styling */
+ul{
+    margin: 20px;
+}
+
+li{
+    padding: 5px;
+}
+
+/* Button Styling */
+button{
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+/* Hover Selector */
+button:hover{
+    background-color: darkgreen;
+}
+
+button:active{
+    background-color: lightgreen;
+}
+
+button:focus{
+    outline: 2px solid blue;
+}
+
+/* Descendant Selector */
+form input{
+    width: 250px;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+/* Form Styling */
+form{
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #ddd;
+    box-shadow: 0 0 10px gray;
+}
