@@ -1,11 +1,61 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Background image -->
+
+    <style>
+      .box {
+        width: 200px;
+        height: 200px;
+        border: 2px solid black;
+        margin: auto;
+        background-image: url("https://imgs.search.brave.com/HCv68I5zeL15bsWs_SYd2woZ2-__F33IiEJXyDqyZBY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/cGl4YWJheS5jb20v/cGhvdG8vMjAxNy8w/NC8wMS8wNS81NC9j/b3ctMjE5MzAxOF82/NDAuanBn");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      /* <!-- Display property --> */
+
+      p {
+        background-color: rgb(167, 7, 7);
+        display: inline;
+        width: 600px;
+      }
+
+      b {
+        background-color: rgb(7, 167, 7);
+        display: block;
+        width: 600px;
+      }
+
+      h2 {
+        color: white;
+        background-color: rgb(7, 7, 167);
+        display: inline-block;
+        width: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+    <p>Lorem ipsum dolor sit, amet.</p>
+
+    <b>This is bold and italic text.</b>
+
+    <h2>This is a heading.</h2>
+
+    <div class="container">
+      <div class="item item1">1</div>
+      <div class="item item2">2</div>
+      <div class="item item3">3</div>
+      <!-- <div class="item item4">4</div>
+        <div class="item item5">5</div> -->
+    </div>
+  </body>
 </html>
