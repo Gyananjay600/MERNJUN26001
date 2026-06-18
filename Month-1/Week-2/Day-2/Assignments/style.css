@@ -1,0 +1,171 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+      background: linear-gradient(
+        135deg,
+        #4facfe,
+        #8e44ad
+    );
+    padding-top:30px;
+}
+
+.nav-container{
+    max-width:1450px;
+    width:95%;
+    height:75px;
+    margin:auto;
+    background:#000;
+    border-radius:18px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 20px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+}
+
+.nav-logo{
+    display:flex;
+    align-items:center;
+}
+
+.nav-logo img{
+    height:140px;
+    width:auto;
+    cursor:pointer;
+}
+
+.nav-list ul{
+    display:flex;
+    align-items:center;
+    gap:35px;
+    list-style:none;
+}
+
+.nav-list ul li a{
+    text-decoration:none;
+    color:white;
+
+    font-size:18px;
+    font-weight:600;
+}
+
+.nav-list ul li a:hover{
+    color:white;
+    text-decoration:underline;
+}
+
+
+.nav-btn button{
+    padding:12px 24px;
+
+    border:none;
+    border-radius:30px;
+
+    background:#d7ef56;
+    color:black;
+
+    font-size:14px;
+    font-weight:600;
+    cursor:pointer;
+}
+
+.nav-btn button:hover{
+    background:transparent;
+    color:#d7ef56;
+
+    border:2px solid #d7ef56;
+
+    box-shadow:none;
+}
+
+
+/* login page */
+
+
+.container{
+    width:420px;
+    height:560px;
+    margin: 40px auto;
+
+    background:#f3f3f3;
+
+
+    border-radius:12px;
+
+    padding:60px 40px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+}
+
+.container h1{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:40px;
+}
+
+.input-box{
+    margin-bottom:40px;
+}
+
+.input-box input{
+    width:100%;
+
+    border:none;
+    outline:none;
+
+    background:transparent;
+
+    border-bottom:2px solid #b5b5b5;
+
+    padding:12px 5px;
+
+    font-size:20px;
+}
+
+.input-box input::placeholder{
+    color:#b0b0b0;
+}
+
+.login-btn{
+    width:100%;
+    padding:16px;
+
+    border:none;
+    cursor:pointer;
+
+    color:white;
+    font-size:24px;
+    font-weight:500;
+
+    background:linear-gradient(
+        90deg,
+        #3498db,
+        #9b59b6
+    );
+}
+
+.extra-links{
+    margin-top:50px;
+    text-align:center;
+}
+
+.extra-links p{
+    margin:auto;
+    color:gray;
+    font-size:18px;
+}
+
+.extra-links a{
+    text-decoration:none;
+    color:#2d6ca2;
+    font-weight:600;
+}
+
+.extra-links a:hover{
+    text-decoration:underline;
+}
