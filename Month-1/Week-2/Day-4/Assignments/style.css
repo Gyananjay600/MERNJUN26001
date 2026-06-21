@@ -1,0 +1,336 @@
+/* ===== RESET ===== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== VARIABLES ===== */
+:root {
+  --blue:      #1D72F5;
+  --blue-dark: #1558C9;
+  --yellow:    #F5A623;
+  --green:     #10B981;
+  --text:      #111827;
+  --muted:     #6B7280;
+  --border:    #E5E7EB;
+  --white:     #FFFFFF;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--text);
+  background: var(--white);
+  line-height: 1.5;
+}
+
+/* =============================
+   NAVBAR
+============================= */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 64px;
+  height: 70px;
+  border-bottom: 1px solid var(--border);
+  background: var(--white);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--blue);
+  flex-shrink: 0;
+}
+
+.logo-icon {
+  width: 36px;
+  height: 36px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 2px;
+}
+
+.nav-links li a {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 7px 13px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text);
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.15s;
+}
+
+.nav-links li a:hover {
+  background: #F3F4F6;
+  color: var(--blue);
+}
+
+.chevron {
+  font-size: 0.75rem;
+  opacity: 0.55;
+}
+
+.btn-login {
+  display: inline-flex;
+  align-items: center;
+  padding: 9px 22px;
+  background: var(--blue);
+  color: var(--white);
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.15s, transform 0.1s;
+}
+
+.btn-login:hover {
+  background: var(--blue-dark);
+  transform: translateY(-1px);
+}
+
+/* =============================
+   HERO
+============================= */
+.hero {
+  display: flex;
+  align-items: center;
+  padding: 70px 64px 0;
+  min-height: 520px;
+  gap: 40px;
+  overflow: hidden;
+}
+
+.hero-left {
+  flex: 1;
+  max-width: 500px;
+  padding-bottom: 60px;
+}
+
+.hero-left h1 {
+  font-size: clamp(2rem, 3.5vw, 3.1rem);
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+  margin-bottom: 22px;
+}
+
+.hero-left p {
+  font-size: 0.975rem;
+  color: var(--muted);
+  line-height: 1.75;
+  max-width: 400px;
+  margin-bottom: 38px;
+}
+
+.btn-explore {
+  display: inline-flex;
+  align-items: center;
+  padding: 14px 30px;
+  background: var(--blue);
+  color: var(--white);
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(29, 114, 245, 0.3);
+  transition: background 0.15s, transform 0.1s;
+}
+
+.btn-explore:hover {
+  background: var(--blue-dark);
+  transform: translateY(-2px);
+}
+
+/* Hero right */
+.hero-right {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  min-height: 460px;
+}
+
+.hero-blob {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 85%;
+  height: 90%;
+  background: linear-gradient(150deg, #ddeaff 0%, #c8d9f8 100%);
+  border-radius: 50% 50% 0 0 / 40% 40% 0 0;
+  z-index: 0;
+}
+
+/* ── YOUR PHOTO ── */
+.hero-photo {
+  position: relative;
+  z-index: 2;
+  width: 500px;
+  height: 560px;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: 20px 20px 0 0;
+  filter: drop-shadow(4px 8px 24px rgba(0,0,0,0.12));
+}
+
+/* Star badge */
+.badge-star {
+  position: absolute;
+  top: 30px;
+  right: 10px;
+  width: 54px;
+  height: 54px;
+  background: var(--blue);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  box-shadow: 0 6px 20px rgba(29, 114, 245, 0.4);
+}
+
+/* Success badge */
+.badge-success {
+  position: absolute;
+  bottom: 90px;
+  left: -10px;
+  background: var(--white);
+  border-radius: 16px;
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.13);
+  z-index: 10;
+}
+
+.badge-icon {
+  width: 48px;
+  height: 48px;
+  background: var(--yellow);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.badge-text strong {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: var(--text);
+  line-height: 1;
+}
+
+.badge-text span {
+  font-size: 0.8rem;
+  color: var(--muted);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+/* =============================
+   FEATURE CARDS
+============================= */
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid var(--border);
+  margin-top: 40px;
+}
+
+.feature-card {
+  padding: 30px 38px 34px;
+  border-right: 1px solid var(--border);
+  border-top: 3px solid transparent;
+}
+
+.feature-card:last-child {
+  border-right: none;
+}
+
+.border-yellow { border-top-color: var(--yellow); }
+.border-blue   { border-top-color: var(--blue); }
+.border-green  { border-top-color: var(--green); }
+
+.feature-card h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  font-size: 0.875rem;
+  color: var(--muted);
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.feature-card a {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--blue);
+  text-decoration: none;
+}
+
+.feature-card a:hover {
+  text-decoration: underline;
+}
+
+/* =============================
+   RESPONSIVE
+============================= */
+@media (max-width: 1024px) {
+  .navbar { padding: 0 32px; }
+  .hero   { padding: 50px 32px 0; }
+}
+
+@media (max-width: 860px) {
+  .navbar { padding: 0 20px; }
+  .nav-links { display: none; }
+
+  .hero {
+    flex-direction: column-reverse;
+    padding: 30px 20px 0;
+    text-align: center;
+    gap: 0;
+  }
+
+  .hero-left { max-width: 100%; padding-bottom: 40px; }
+  .hero-left p { max-width: 100%; }
+  .hero-right { min-height: 300px; width: 100%; }
+
+  .hero-photo { width: 240px; height: 320px; }
+
+  .badge-success {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .features { grid-template-columns: 1fr; }
+
+  .feature-card {
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .feature-card:last-child { border-bottom: none; }
+}
