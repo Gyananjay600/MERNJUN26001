@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.box{
+    width: 150px;
+    height: 150px;
+}
+
+.box1{
+    background-color: blue;
+    position: relative;
+    top: 100px;
+    left:200px;
+
+}
+
+
+/* .box2{
+    background-color: green;
+} */
+
+.para1{
+    background-color: yellow;
+    /* position: fixed;
+    top: 0; */
+    position: sticky;
+    top: 0;
+}
+
+.para2{
+    background-color: green;
+    position: absolute;
+}
+
+.para3{
+    background-color: pink;
+    
+}
+
