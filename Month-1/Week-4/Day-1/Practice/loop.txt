@@ -1,0 +1,19 @@
+ loop statement type:
+ ====================
+ 1. for loop
+ 2. while loop
+ 3. do while loop
+ 4. for in loop
+ 5. for of loop
+
+for loop
+----------
+
+for(initialization;condition;updation){
+    statement
+}
+
+1. initialization executes only once
+2. condition check executes block
+3. updation happens then checks condition repeat
+   until condition satisfied
