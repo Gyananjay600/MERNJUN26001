@@ -42,8 +42,8 @@ console.log(arr)
 // types of functions:
 // 1. Anonymous function : this is a function without a name, often used as an argument to other functions or assigned to a variable.
 // 2. Named function : this is a function with a name, which can be called by its name elsewhere in the code.
-// 3. Expression function
-// 4. Arrow function
+// 3. Expression function : this is a function that is defined as part of an expression, such as being assigned to a variable or passed as an argument to another function.
+// 4. Arrow function : this is a shorter syntax for writing functions, introduced in ES6, which allows for more concise function expressions and lexical scoping of the `this` keyword.
 
 
 // Anonymous function
@@ -119,6 +119,7 @@ hof(() => {
 
 
 // special function of array : map(), filter(), reduce(), forEach(), sort()
+// return type of map(), filter(), reduce() is an array, forEach() is undefined, sort() is an array
 
 // forEach() : executes a provided function once for each array element
 
