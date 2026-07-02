@@ -115,3 +115,4 @@ login_form.addEventListener("submit", (event) => {
     console.log("register form submitted");
 
 })
+
